@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build:css": "postcss src/input.css -o src/output.css"
+    "build-p": "postcss src/input.css -o src/output.css -w",
+    "build-t": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
